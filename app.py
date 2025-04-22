@@ -16,6 +16,7 @@ rf_model = joblib.load("artifacts/rf_model.pkl")
 
 # === Dash App ===
 app = dash.Dash(__name__)
+server = app.server
 
 app.layout = html.Div([
     html.H1("🎓 Student Performance Predictor", style={'textAlign': 'center', 'color': '#333'}),
